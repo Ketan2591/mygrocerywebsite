@@ -1,0 +1,169 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Yinka Enoch Adedokun">
+        <meta name="description" content="Simple Forgot Password Page Using HTML and CSS">
+        <meta name="keywords" content="forgot password page, basic html and css">
+        <title>Forgot Password Page - HTML + CSS</title>
+        <link rel="stylesheet" href="css/forgotpass.css">
+    </head>
+    <body>
+        <div class="row">
+            <h1>Forgot Password</h1>
+            <h6 class="information-text">Enter your registered email to reset your password.</h6>
+
+            <div class="form-group">
+                <input type="email" name="user_email" id="user_email">
+                <p><label for="username">Email</label></p>
+                <button>Reset Password</button>
+            </div>
+
+            <div class="footer">
+                <h5>New here? <a href="file:///C:/Users/Kishor/Desktop/HTML-CSS/tasks/registration.html#">Sign Up.</a></h5>
+                <h5>Already have an account? <a href="file:///C:/Users/Kishor/Desktop/HTML-CSS/Grocery/grocery.html?#">Sign In.</a></h5>
+            </div>
+        </div>
+    </body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password Page - HTML + CSS</title>
+        <link rel="stylesheet" href="css/forgotpass.css">
+</head>
+<body>
+    <div class="row">
+        <h1>Forgot Password</h1>
+        <h6>Enter your registered email to reset your password.</h6>
+
+        <div class="form-group">
+            <input type="email" name="user_email" id="user_email" placeholder="Your Email">
+            <label for="username">Email</label>
+            <button type="submit">Reset Password</button>
+        </div>
+
+        <div class="footer">
+            <h5>New here? <a href="file:///C:/Users/Kishor/Desktop/HTML-CSS/tasks/registration.html#">Sign Up.</a></h5>
+            <h5>Already have an account? <a href="file:///C:/Users/Kishor/Desktop/HTML-CSS/Grocery/grocery.html?#">Sign In.</a></h5>
+        </div>
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/forgotpass.css">
+    <title>Recet Password - Grocery Store</title>
+
+    <link rel="icon" type="image/icon" href="image/favicon.PNG">
+
+    <!-- code for font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- code for font awesome cdn-->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+</head>
+<body>
+
+     <!-- header section -->
+     <header class="header">
+        <a href="#" class="logo"><i class="fa fa-shopping-basket"></i> grocery</a>
+
+        <nav class="navbar">
+            <a href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/index.html#home">home</a>
+            <a href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/index.html#features">features</a>
+            <a href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/index.html#products">products</a>
+            <a href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/index.html#categories">categories</a>
+            <a href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/index.html#review">review</a>
+            <a href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/index.html#blogs">blogs</a>
+        </nav>
+
+
+
+        <div class="icons">
+            <div class="fa fa-bars" id="menu-btn"></div>
+            <div class="fa fa-search" id="search-btn"></div>
+            <div class="fa fa-shopping-cart" id="cart-btn"></div>
+            <div class="fa fa-user" id="login-btn"></div>
+        </div>
+
+        <form class="search-form">
+            <input type="search" id="search-box" placeholder="search here....">
+            <label for="search-box" class="fa fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fa fa-trash"></i>
+                <img src="image/cart-img-1.png">
+                <div class="content">
+                    <h3>watermelon</h3>
+                    <span class="price">Rs.60/kg</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fa fa-trash"></i>
+                <img src="image/cart-img-2.png">
+                <div class="content">
+                    <h3>onion</h3>
+                    <span class="price">Rs.50/kg</span>
+                    <span class="quantity">qty : 2</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fa fa-trash"></i>
+                <img src="image/cart-img-3.png">
+                <div class="content">
+                    <h3>chicken</h3>
+                    <span class="price">Rs.80/kg</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+
+            <div class="total"> total : Rs.190/-</div>
+            <a href="#" class="btn">checkout</a>
+        </div>
+
+
+        <form action="#" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+
+            <p>forgot your password? <a href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/forgotpass.html">click here</a></p>
+            <p>don't have an account? <a href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/registration.html">create now</a></p>
+
+            <input type="submit" value="login now" class="btn">
+        </form>
+
+    </header>
+
+    <!-- header section -->
+
+
+    <div class="Forgot-Pass">
+        <h1>Recet Password</h1>
+        <form action="#" method="post">
+            <p>Email Verify:</p>
+            <input type="email" name="email" placeholder="Email">
+        
+            <a href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/forgotpass2.html"><button type="submit">Verify</button></a>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
