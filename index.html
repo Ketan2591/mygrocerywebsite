@@ -1,110 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grocery Store</title>
 
-    <link rel="icon" type="image/icon" href="image/favicon.PNG">
+    <link rel="icon" type="image/icon" href="image/favicon.PNG" />
     <!-- code for font awesome cdn-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- code for font awesome cdn-->
 
     <!-- code for linking css file-->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!-- code for linking css file-->
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-</head>
-<body>
-    
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
     <!-- header section -->
     <header class="header">
-        <a href="#" class="logo"><i class="fa fa-shopping-basket"></i> grocery</a>
+      <a href="#" class="logo"><i class="fa fa-shopping-basket"></i> grocery</a>
 
-        <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="#features">features</a>
-            <a href="#products">products</a>
-            <a href="#categories">categories</a>
-            <a href="#review">review</a>
-            <a href="#blogs">blogs</a>
-        </nav>
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#features">features</a>
+        <a href="#products">products</a>
+        <a href="#categories">categories</a>
+        <a href="#review">review</a>
+        <a href="#blogs">blogs</a>
+      </nav>
 
+      <div class="icons">
+        <div class="fa fa-bars" id="menu-btn"></div>
+        <div class="fa fa-search" id="search-btn"></div>
+        <div class="fa fa-shopping-cart" id="cart-btn"></div>
+        <div class="fa fa-user" id="login-btn"></div>
+      </div>
 
-        <div class="icons">
-            <div class="fa fa-bars" id="menu-btn"></div>
-            <div class="fa fa-search" id="search-btn"></div>
-            <div class="fa fa-shopping-cart" id="cart-btn"></div>
-            <div class="fa fa-user" id="login-btn"></div>
+      <form class="search-form">
+        <input type="search" id="search-box" placeholder="search here...." />
+        <label for="search-box" class="fa fa-search"></label>
+      </form>
+
+      <div class="shopping-cart">
+        <div class="box">
+          <i class="fa fa-trash"></i>
+          <img src="image/cart-img-1.png" />
+          <div class="content">
+            <h3>watermelon</h3>
+            <span class="price">Rs.60/kg</span>
+            <span class="quantity">qty : 1</span>
+          </div>
         </div>
 
-        <form class="search-form">
-            <input type="search" id="search-box" placeholder="search here....">
-            <label for="search-box" class="fa fa-search"></label>
-        </form>
-
-        <div class="shopping-cart">
-            <div class="box">
-                <i class="fa fa-trash"></i>
-                <img src="image/cart-img-1.png">
-                <div class="content">
-                    <h3>watermelon</h3>
-                    <span class="price">Rs.60/kg</span>
-                    <span class="quantity">qty : 1</span>
-                </div>
-            </div>
-
-            <div class="box">
-                <i class="fa fa-trash"></i>
-                <img src="image/cart-img-2.png">
-                <div class="content">
-                    <h3>onion</h3>
-                    <span class="price">Rs.50/kg</span>
-                    <span class="quantity">qty : 2</span>
-                </div>
-            </div>
-
-            <div class="box">
-                <i class="fa fa-trash"></i>
-                <img src="image/cart-img-3.png">
-                <div class="content">
-                    <h3>chicken</h3>
-                    <span class="price">Rs.80/kg</span>
-                    <span class="quantity">qty : 1</span>
-                </div>
-            </div>
-
-            <div class="total"> total : Rs.190/-</div>
-            <a href="#" class="btn">checkout</a>
+        <div class="box">
+          <i class="fa fa-trash"></i>
+          <img src="image/cart-img-2.png" />
+          <div class="content">
+            <h3>onion</h3>
+            <span class="price">Rs.50/kg</span>
+            <span class="quantity">qty : 2</span>
+          </div>
         </div>
 
+        <div class="box">
+          <i class="fa fa-trash"></i>
+          <img src="image/cart-img-3.png" />
+          <div class="content">
+            <h3>chicken</h3>
+            <span class="price">Rs.80/kg</span>
+            <span class="quantity">qty : 1</span>
+          </div>
+        </div>
 
-        <form action="#" class="login-form">
-            <h3>login now</h3>
-            <input type="email" placeholder="your email" class="box">
-            <input type="password" placeholder="your password" class="box">
+        <div class="total">total : Rs.190/-</div>
+        <a href="#" class="btn">checkout</a>
+      </div>
 
-            <p>forgot your password? <a href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/forgotpass.html">click here</a></p>
-            <p>don't have an account? <a href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/registration.html">create now</a></p>
+      <form action="#" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box" />
+        <input type="password" placeholder="your password" class="box" />
 
-            <!-- <input type="submit" value="login now" class="btn"> -->
-            <button type="submit" class="btn">login now</button>
-        </form>
+        <p>
+          forgot your password?
+          <a
+            href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/forgotpass.html"
+            >click here</a
+          >
+        </p>
+        <p>
+          don't have an account?
+          <a
+            href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/registration.html"
+            >create now</a
+          >
+        </p>
 
+        <!-- <input type="submit" value="login now" class="btn"> -->
+        <button type="submit" class="btn">login now</button>
+      </form>
     </header>
 
     <!-- header section -->
 
     <!-- banner section -->
-    
-    <section class="home" id="home">
-        <div class="content">
-            <h3>fresh and <span>organic</span> products for you</h3>
-            <p>grocery store website is a very helpfull for your grocery products.this website gives you a very fresh and organic products to you for your good health.</p>
 
-            <a href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/pro.html" class="btn">shop now</a>
-        </div> 
+    <section class="home" id="home">
+      <div class="content">
+        <h3>fresh and <span>organic</span> products for you</h3>
+        <p>
+          grocery store website is a very helpfull for your grocery
+          products.this website gives you a very fresh and organic products to
+          you for your good health.
+        </p>
+
+        <a href="/pro.html" class="btn">shop now</a>
+      </div>
     </section>
 
     <!-- banner section -->
@@ -112,37 +130,53 @@
     <!-- our feature section -->
 
     <section class="features" id="features">
-        <h1 class="heading"> our <span>features</span> </h1>
+      <h1 class="heading">our <span>features</span></h1>
 
-        <div class="box-container">
-            <div class="box">
-                <img src="image/feature-img-1.png">
-                <h3>fresh and organic</h3>
+      <div class="box-container">
+        <div class="box">
+          <img src="image/feature-img-1.png" />
+          <h3>fresh and organic</h3>
 
-                <p>grocery store provides you a very fresh and organic products to you.</p>
+          <p>
+            grocery store provides you a very fresh and organic products to you.
+          </p>
 
-                <a href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/organic.html" class="btn">read more</a>
-            </div>
-
-            <div class="box">
-                <img src="image/feature-img-2.png">
-                <h3>home delivery</h3>
-
-                <p>grocery store provides you a home delivery to our customers.</p>
-
-                <a href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/homedel.html" class="btn">read more</a>
-            </div>
-
-            <div class="box">
-                <img src="image/feature-img-3.png">
-                <h3>online payment</h3>
-
-                <p>grocery store provides you a online payments using UPI, paytm and many more.</p>
-
-                <a href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/payment.html" class="btn">read more</a>
-            </div>
+          <a
+            href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/organic.html"
+            class="btn"
+            >read more</a
+          >
         </div>
-        
+
+        <div class="box">
+          <img src="image/feature-img-2.png" />
+          <h3>home delivery</h3>
+
+          <p>grocery store provides you a home delivery to our customers.</p>
+
+          <a
+            href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/homedel.html"
+            class="btn"
+            >read more</a
+          >
+        </div>
+
+        <div class="box">
+          <img src="image/feature-img-3.png" />
+          <h3>online payment</h3>
+
+          <p>
+            grocery store provides you a online payments using UPI, paytm and
+            many more.
+          </p>
+
+          <a
+            href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/payment.html"
+            class="btn"
+            >read more</a
+          >
+        </div>
+      </div>
     </section>
 
     <!-- our feature section -->
@@ -150,163 +184,185 @@
     <!-- our products section -->
 
     <section class="products" id="products">
-        <h1 class="heading"> our <a href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/pro.html"><span>products</span></a></h1>
-        <a href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/pro.html" class="btn">show all</a>
+      <h1 class="heading">
+        our
+        <a
+          href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/pro.html"
+          ><span>products</span></a
+        >
+      </h1>
+      <a
+        href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/pro.html"
+        class="btn"
+        >show all</a
+      >
 
-        <div class="swiper product-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide box">
-                    <img src="image/product-1.png">
-                    <h1>fresh orange</h1>
-                    <div class="price"> Rs.50/kg - - 100/kg</div>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                    </div>
-                    <a href="#" class="btn">add to cart</a><br>
-                    <a href="#" class="btn">buy now</a>
-                </div>
-
-                <div class="swiper-slide box">
-                    <img src="image/product-2.png">
-                    <h1>fresh garlic</h1>
-                    <div class="price"> Rs.30/kg - - 70/kg</div>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                    <a href="#" class="btn">add to cart</a><br>
-                    <a href="#" class="btn">buy now</a>
-                </div>
-
-                <div class="swiper-slide box">
-                    <img src="image/product-3.png">
-                    <h1>fresh meat</h1>
-                    <div class="price"> Rs.50/kg - - 100/kg</div>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                    </div>
-                    <a href="#" class="btn">add to cart</a><br>
-                    <a href="#" class="btn">buy now</a>
-                </div>
-
-                <div class="swiper-slide box">
-                    <img src="image/product-4.png">
-                    <h1>fresh cabbage</h1>
-                    <div class="price"> Rs.50/kg - - 100/kg</div>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                    <a href="#" class="btn">add to cart</a><br>
-                    <a href="#" class="btn">buy now</a>
-                </div>
+      <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="image/product-1.png" />
+            <h1>fresh orange</h1>
+            <div class="price">Rs.50/kg - - 100/kg</div>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half"></i>
             </div>
-        </div>
+            <a href="#" class="btn">add to cart</a><br />
+            <a href="#" class="btn">buy now</a>
+          </div>
 
-
-
-
-        <div class="swiper product-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide box">
-                    <img src="image/product-5.png">
-                    <h1>fresh potatos</h1>
-                    <div class="price"> Rs.50/kg - - 100/kg</div>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                    <a href="#" class="btn">add to cart</a><br>
-                    <a href="#" class="btn">buy now</a>
-                </div>
-
-                <div class="swiper-slide box">
-                    <img src="image/product-6.png">
-                    <h1>fresh guava</h1>
-                    <div class="price"> Rs.50/kg - - 70/kg</div>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                    <a href="#" class="btn">add to cart</a><br>
-                    <a href="#" class="btn">buy now</a>
-                </div>
-
-                <div class="swiper-slide box">
-                    <img src="image/product-7.png">
-                    <h1>fresh carrot</h1>
-                    <div class="price"> Rs.50/kg - - 100/kg</div>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                    </div>
-                    <a href="#" class="btn">add to cart</a><br>
-                    <a href="#" class="btn">buy now</a>
-                </div>
+          <div class="swiper-slide box">
+            <img src="image/product-2.png" />
+            <h1>fresh garlic</h1>
+            <div class="price">Rs.30/kg - - 70/kg</div>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
             </div>
+            <a href="#" class="btn">add to cart</a><br />
+            <a href="#" class="btn">buy now</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/product-3.png" />
+            <h1>fresh meat</h1>
+            <div class="price">Rs.50/kg - - 100/kg</div>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a><br />
+            <a href="#" class="btn">buy now</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/product-4.png" />
+            <h1>fresh cabbage</h1>
+            <div class="price">Rs.50/kg - - 100/kg</div>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a><br />
+            <a href="#" class="btn">buy now</a>
+          </div>
         </div>
+      </div>
+
+      <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="image/product-5.png" />
+            <h1>fresh potatos</h1>
+            <div class="price">Rs.50/kg - - 100/kg</div>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a><br />
+            <a href="#" class="btn">buy now</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/product-6.png" />
+            <h1>fresh guava</h1>
+            <div class="price">Rs.50/kg - - 70/kg</div>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a><br />
+            <a href="#" class="btn">buy now</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/product-7.png" />
+            <h1>fresh carrot</h1>
+            <div class="price">Rs.50/kg - - 100/kg</div>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half"></i>
+            </div>
+            <a href="#" class="btn">add to cart</a><br />
+            <a href="#" class="btn">buy now</a>
+          </div>
+        </div>
+      </div>
     </section>
-    
-    <!-- our products section -->
 
+    <!-- our products section -->
 
     <!-- our categories section -->
 
     <section class="categories" id="categories">
-        <h1 class="heading">product <span>categories</span></h1>
+      <h1 class="heading">product <span>categories</span></h1>
 
-        <div class="box-container">
-                <div class="box">
-                <img src="image/cat-1.png">
-                <h3>vegetables</h3>
-                <p>upto 45% off</p>
-                <a href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/vegetables.html" class="btn">shop now</a>
-            </div>
-
-            <div class="box">
-                <img src="image/cat-2.png">
-                <h3>fresh fruits</h3>
-                <p>upto 35% off</p>
-                <a href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/fruits.html" class="btn">shop now</a>
-            </div>
-
-            <div class="box">
-                <img src="image/cat-3.png">
-                <h3>dairy products</h3>
-                <p>upto 55% off</p>
-                <a href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/dairy.html" class="btn">shop now</a>
-            </div>
-
-            <div class="box">
-                <img src="image/cat-4.png">
-                <h3>fresh meat</h3>
-                <p>upto 25% off</p>
-                <a href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/meat.html" class="btn">shop now</a>
-            </div>
+      <div class="box-container">
+        <div class="box">
+          <img src="image/cat-1.png" />
+          <h3>vegetables</h3>
+          <p>upto 45% off</p>
+          <a
+            href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/vegetables.html"
+            class="btn"
+            >shop now</a
+          >
         </div>
+
+        <div class="box">
+          <img src="image/cat-2.png" />
+          <h3>fresh fruits</h3>
+          <p>upto 35% off</p>
+          <a
+            href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/fruits.html"
+            class="btn"
+            >shop now</a
+          >
+        </div>
+
+        <div class="box">
+          <img src="image/cat-3.png" />
+          <h3>dairy products</h3>
+          <p>upto 55% off</p>
+          <a
+            href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/dairy.html"
+            class="btn"
+            >shop now</a
+          >
+        </div>
+
+        <div class="box">
+          <img src="image/cat-4.png" />
+          <h3>fresh meat</h3>
+          <p>upto 25% off</p>
+          <a
+            href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/meat.html"
+            class="btn"
+            >shop now</a
+          >
+        </div>
+      </div>
     </section>
 
     <!-- our categories section -->
@@ -314,63 +370,75 @@
     <!-- our reviews section -->
 
     <section class="review" id="review">
-        <h1 class="heading">customer's <span>review</span></h1>
+      <h1 class="heading">customer's <span>review</span></h1>
 
-        <div class="swiper review-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide box">
-                    <img src="image/pic-1.png">
-                    <p>Grocery store products are VERY VERY GOOD in quality. I could not get these quality product for this price even in Town Hall. </p>
-                    <h3> Mr. Dhanabal</h3>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                    </div>
-                </div>
-
-                <div class="swiper-slide box">
-                    <img src="image/pic-2.png">
-                    <p>I could not find some products anywhere in near by super markets. But I am able to find all the products in Grocery store website. </p>
-                    <h3>Ms. Nandhini</h3>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                </div>
-
-                <div class="swiper-slide box">
-                    <img src="image/pic-3.png">
-                    <p>Now you don't need a long wait to get your groceries every week. You can order just in few mins and get it delivered the same day.</p>
-                    <h3>Mr. Gangadaran</h3>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                    </div>
-                </div>
-
-                <div class="swiper-slide box">
-                    <img src="image/pic-4.png">
-                    <p>I love to shop in here. You don't want to do your weekly grocery shopping anywhere else because it could be expensive.</p>
-                    <h3>mrs. nitika</h3>
-                    <div class="stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                    </div>
-                </div>
+      <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="image/pic-1.png" />
+            <p>
+              Grocery store products are VERY VERY GOOD in quality. I could not
+              get these quality product for this price even in Town Hall.
+            </p>
+            <h3>Mr. Dhanabal</h3>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half"></i>
             </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/pic-2.png" />
+            <p>
+              I could not find some products anywhere in near by super markets.
+              But I am able to find all the products in Grocery store website.
+            </p>
+            <h3>Ms. Nandhini</h3>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/pic-3.png" />
+            <p>
+              Now you don't need a long wait to get your groceries every week.
+              You can order just in few mins and get it delivered the same day.
+            </p>
+            <h3>Mr. Gangadaran</h3>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/pic-4.png" />
+            <p>
+              I love to shop in here. You don't want to do your weekly grocery
+              shopping anywhere else because it could be expensive.
+            </p>
+            <h3>mrs. nitika</h3>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half"></i>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- our reviews section -->
@@ -378,48 +446,66 @@
     <!-- our blogs section -->
 
     <section class="blogs" id="blogs">
-        <h1 class="heading">our <span>blogs</span></h1>
+      <h1 class="heading">our <span>blogs</span></h1>
 
-        <div class="box-container">
-            <div class="box">
-                <img src="image/blog-1.jpg">
-                <div class="content">
-                    <div class="icons">
-                        <a href="#"><i class="fa fa-user">by nitin</i></a>
-                        <a href="#"><i class="fa fa-calendar"> 1st may, 2023</i></a>
-                    </div>
-                    <h3>fresh and organic <br>fruits</h3>
-                    <p>grocery store a very hard working for provide you a very fresh fruits to you. grocery store provide you a very fresh and organic fruits to you.on this website , you can find all types of fruits. and you can order by online to to your home.grocery store gives you a very healthy fruits to you.</p>
-                    <!-- <a href="#" class="btn">read more</a> -->
-                </div>
+      <div class="box-container">
+        <div class="box">
+          <img src="image/blog-1.jpg" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fa fa-user">by nitin</i></a>
+              <a href="#"><i class="fa fa-calendar"> 1st may, 2023</i></a>
             </div>
-
-            <div class="box">
-                <img src="image/blog-2.jpg">
-                <div class="content">
-                    <div class="icons">
-                        <a href="#"><i class="fa fa-user">by gita</i></a>
-                        <a href="#"><i class="fa fa-calendar"> 23rd june, 2023</i></a>
-                    </div>
-                    <h3>fresh and organic vegetables</h3>
-                    <p>wow! this grocery store website gives you a various types of vegetables like potatos, tomatos, red chillies and many more. this website provide you a very fresh and organic vegetable to you. if you are think that, this is right or wrong for you? i say that it is right for all.</p>
-                    <!-- <a href="#" class="btn">read more</a> -->
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="image/blog-3.jpg">
-                <div class="content">
-                    <div class="icons">
-                        <a href="#"><i class="fa fa-user">by hiral</i></a>
-                        <a href="#"><i class="fa fa-calendar"> 21st jan, 2023</i></a>
-                    </div>
-                    <h3>fresh dairy and meat products</h3>
-                    <p>grocery store provides you a new and very fresh dairy products. it is also provide you a very fresh and differents types of meats. grocery store is one of the best website for grocery, you can easily find what you want.and also it is gives you a discounts on all products.this is best for you.</p>
-                    <!-- <a href="#" class="btn">read more</a> -->
-                </div>
-            </div>
+            <h3>fresh and organic <br />fruits</h3>
+            <p>
+              grocery store a very hard working for provide you a very fresh
+              fruits to you. grocery store provide you a very fresh and organic
+              fruits to you.on this website , you can find all types of fruits.
+              and you can order by online to to your home.grocery store gives
+              you a very healthy fruits to you.
+            </p>
+            <!-- <a href="#" class="btn">read more</a> -->
+          </div>
         </div>
+
+        <div class="box">
+          <img src="image/blog-2.jpg" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fa fa-user">by gita</i></a>
+              <a href="#"><i class="fa fa-calendar"> 23rd june, 2023</i></a>
+            </div>
+            <h3>fresh and organic vegetables</h3>
+            <p>
+              wow! this grocery store website gives you a various types of
+              vegetables like potatos, tomatos, red chillies and many more. this
+              website provide you a very fresh and organic vegetable to you. if
+              you are think that, this is right or wrong for you? i say that it
+              is right for all.
+            </p>
+            <!-- <a href="#" class="btn">read more</a> -->
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="image/blog-3.jpg" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fa fa-user">by hiral</i></a>
+              <a href="#"><i class="fa fa-calendar"> 21st jan, 2023</i></a>
+            </div>
+            <h3>fresh dairy and meat products</h3>
+            <p>
+              grocery store provides you a new and very fresh dairy products. it
+              is also provide you a very fresh and differents types of meats.
+              grocery store is one of the best website for grocery, you can
+              easily find what you want.and also it is gives you a discounts on
+              all products.this is best for you.
+            </p>
+            <!-- <a href="#" class="btn">read more</a> -->
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- our blogs section -->
@@ -427,52 +513,96 @@
     <!-- our footer section -->
 
     <section class="footer">
-        <div class="box-container">
-            <div class="box">
-                <h3>groco <i class="fa fa-shopping-basket"></i></h3>
-                <p>feel free to follow us on our social media handlers all the links are given below.</p>
-                
-                <div class="share">
-                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-                    <a href="https://twitter.com/" class="fa fa-twitter"></a>
-                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-                    <a href="https://www.linkedin.com/checkpoint/lg/login?trk=hb_signin&errorKey=challenge_global_internal_error&pageInstance=urn%3Ali%3Apage%3Acheckpoint_lg_login_default%3ByOvQ3PsQTfKXOHirldpyRw%3D%3D&controlId=d_checkpoint_lg_consumerLogin-login_submit_button" class="fa fa-linkedin"></a>
-                </div>
-            </div>
+      <div class="box-container">
+        <div class="box">
+          <h3>groco <i class="fa fa-shopping-basket"></i></h3>
+          <p>
+            feel free to follow us on our social media handlers all the links
+            are given below.
+          </p>
 
-            <div class="box">
-                <h3>contact info</h3>
-                <a href="#" class="links"><i class="fa fa-phone"> +91 9265873088</i></a>
-                <a href="#" class="links"><i class="fa fa-phone"> +91 4445558882</i></a>
-                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="links"><i class="fa fa-envelope"> info@grocery.com</i></a>
-                <a href="https://www.google.com/maps/place/D-Mart/@23.1016219,72.5289987,13z/data=!4m10!1m2!2m1!1sD+Mart+near+Visat+Gandhinagar+Junction,+Gujarat+State+Highway+41,+Parvati+Nagar,+Acher,+Ahmedabad,+Gujarat!3m6!1s0x395e83c845233e29:0x231201e985a63c9f!8m2!3d23.101552!4d72.5936268!15sCmpEIE1hcnQgbmVhciBWaXNhdCBHYW5kaGluYWdhciBKdW5jdGlvbiwgR3VqYXJhdCBTdGF0ZSBIaWdod2F5IDQxLCBQYXJ2YXRpIE5hZ2FyLCBBY2hlciwgQWhtZWRhYmFkLCBHdWphcmF0IgOIAQFaZyJlZCBtYXJ0IG5lYXIgdmlzYXQgZ2FuZGhpbmFnYXIganVuY3Rpb24gZ3VqYXJhdCBzdGF0ZSBoaWdod2F5IDQxIHBhcnZhdGkgbmFnYXIgYWNoZXIgYWhtZWRhYmFkIGd1amFyYXSSAQtoeXBlcm1hcmtldOABAA!16s%2Fg%2F1tf85gxt?authuser=0&entry=ttu" class="links"><i class="fa fa-map-marker"> ahmedabad, gujarat, india</i></a>
-            </div>
-
-            <div class="box">
-                <h3>quick links</h3>
-                <a href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/index.html#home" class="links"><i class="fa fa-arrow-right"> home</i></a>
-                <a href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/index.html#features" class="links"><i class="fa fa-arrow-right"> features</i></a>
-                <a href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/index.html#products" class="links"><i class="fa fa-arrow-right"> products</i></a>
-                <a href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/index.html#categories" class="links"><i class="fa fa-arrow-right"> categories</i></a>
-                <a href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/index.html#review" class="links"><i class="fa fa-arrow-right"> review</i></a>
-                <a href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/index.html#blogs" class="links"><i class="fa fa-arrow-right"> blogs</i></a>
-            </div>
-
-            <div class="box">
-                <h3>newsletter</h3>
-                <p>subscribe for latest updates</p>
-                <input type="email" placeholder="your Email" class="email">
-                <input type="submit" value="subscribe" class="btn">
-                <img src="image/payment.png" class="payment-img">
-            </div>
+          <div class="share">
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            <a
+              href="https://www.linkedin.com/checkpoint/lg/login?trk=hb_signin&errorKey=challenge_global_internal_error&pageInstance=urn%3Ali%3Apage%3Acheckpoint_lg_login_default%3ByOvQ3PsQTfKXOHirldpyRw%3D%3D&controlId=d_checkpoint_lg_consumerLogin-login_submit_button"
+              class="fa fa-linkedin"
+            ></a>
+          </div>
         </div>
 
-        <div class="credit">Copyright © <span>2024 grocery store </span>| all rights reserved</div>
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#" class="links"
+            ><i class="fa fa-phone"> +91 9265873088</i></a
+          >
+          <a href="#" class="links"
+            ><i class="fa fa-phone"> +91 4445558882</i></a
+          >
+          <a
+            href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+            class="links"
+            ><i class="fa fa-envelope"> info@grocery.com</i></a
+          >
+          <a
+            href="https://www.google.com/maps/place/D-Mart/@23.1016219,72.5289987,13z/data=!4m10!1m2!2m1!1sD+Mart+near+Visat+Gandhinagar+Junction,+Gujarat+State+Highway+41,+Parvati+Nagar,+Acher,+Ahmedabad,+Gujarat!3m6!1s0x395e83c845233e29:0x231201e985a63c9f!8m2!3d23.101552!4d72.5936268!15sCmpEIE1hcnQgbmVhciBWaXNhdCBHYW5kaGluYWdhciBKdW5jdGlvbiwgR3VqYXJhdCBTdGF0ZSBIaWdod2F5IDQxLCBQYXJ2YXRpIE5hZ2FyLCBBY2hlciwgQWhtZWRhYmFkLCBHdWphcmF0IgOIAQFaZyJlZCBtYXJ0IG5lYXIgdmlzYXQgZ2FuZGhpbmFnYXIganVuY3Rpb24gZ3VqYXJhdCBzdGF0ZSBoaWdod2F5IDQxIHBhcnZhdGkgbmFnYXIgYWNoZXIgYWhtZWRhYmFkIGd1amFyYXSSAQtoeXBlcm1hcmtldOABAA!16s%2Fg%2F1tf85gxt?authuser=0&entry=ttu"
+            class="links"
+            ><i class="fa fa-map-marker"> ahmedabad, gujarat, india</i></a
+          >
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a
+            href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/index.html#home"
+            class="links"
+            ><i class="fa fa-arrow-right"> home</i></a
+          >
+          <a
+            href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/index.html#features"
+            class="links"
+            ><i class="fa fa-arrow-right"> features</i></a
+          >
+          <a
+            href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/index.html#products"
+            class="links"
+            ><i class="fa fa-arrow-right"> products</i></a
+          >
+          <a
+            href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/index.html#categories"
+            class="links"
+            ><i class="fa fa-arrow-right"> categories</i></a
+          >
+          <a
+            href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/index.html#review"
+            class="links"
+            ><i class="fa fa-arrow-right"> review</i></a
+          >
+          <a
+            href="file:///C:/Users/Kishor/Desktop/ketan/HTML-CSS/Grocery/index.html#blogs"
+            class="links"
+            ><i class="fa fa-arrow-right"> blogs</i></a
+          >
+        </div>
+
+        <div class="box">
+          <h3>newsletter</h3>
+          <p>subscribe for latest updates</p>
+          <input type="email" placeholder="your Email" class="email" />
+          <input type="submit" value="subscribe" class="btn" />
+          <img src="image/payment.png" class="payment-img" />
+        </div>
+      </div>
+
+      <div class="credit">
+        Copyright © <span>2024 grocery store </span>| all rights reserved
+      </div>
     </section>
 
     <!-- our footer section -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
